@@ -1,8 +1,27 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --light: oklch(92.3% 0.003 48.717)
+}
+
+.dark {
+  --color-background: #0a0a0a;
+  --color-foreground: #ededed;
+  --color-light: #d6d3d1;
+}
+
+@theme {
+  --color-light: #d6d3d1;
+  --color-dark: #171717;
+  --color-movieCard: #a3a3a3;
+  --color-movieCard-dark: #27272a;
+  --breakpoint-xs: 420px;
+  --breakpoint-2xl: 100rem;
+  --breakpoint-3xl: 120rem;
 }
 
 @theme inline {
