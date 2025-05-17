@@ -1,14 +1,34 @@
-﻿# Acsid-Maad-task
-# Acsid-Maad-task
- برای استفاده از vpn استفاده کنید تا عکس ها لود بشه. بدلیل تحریم ها امکان استفاده از Image nextjs هم نبود.
+## 🎬 Movie App
 
-برای اجرای پروژه نیاز به تنظیم متغیرهای محیطی داری که در فایل .env.local قرار می‌گیرند. این فایل به دلیل امنیت اطلاعات حساس مثل کلید API، در مخزن گیت‌هاب قرار داده نشده است.
+A responsive movie browser built with **Next.js**, **React**, and **TypeScript**, using the **TMDB API**.
 
-در این پروژه، شما باید کلید API سرویس TMDB (The Movie Database) را در .env.local قرار دهید.
+### Features:
+- Search movies by title  
+- Dark/Light theme toggle  
+- Movie detail page  
+- Fully responsive design  
+- Optional genre/category filtering  
+- Proper loading and error handling  
 
-برای این کار:
+### Tech stack:
+Next.js, React, TypeScript, Tailwind CSS, Zustand, Axios, React Query, React Select, Lodash Debounce
 
-یک فایل .env.local در ریشه پروژه بسازید.
+---
 
-متغیر زیر را با کلید API دریافتی از TMDB پر کنید:
+### 🛠️ How to run locally:
+
+1. Create a `.env.local` file in the root of your project.
+2. Add the following line with your TMDB API key:
+
+```env
 REACT_APP_TMDB_API_KEY=your_tmdb_api_key_here
+```
+
+> 📌 **Note**: A VPN may be required to load images or fetch data due to regional restrictions or TMDB API limitations.  
+> Due to security reasons, `.env.local` is not included in the repository.
+
+---
+
+### 🖼️ Preview:
+
+![screenshot](./screenshot.png)
